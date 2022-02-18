@@ -162,39 +162,37 @@ main h1 {
 } */
 
 .request-list {
-  margin: 36px 0;
+
+  margin: 24px 0;
+  display: flex;
 }
 
 .request {
   display: flex;
-  margin: 12px 0px;
-  width: 100%;
-  min-height: 100px;
+  flex-direction: column;
+  margin: 12px 12px 0 0;
+  width: 33.3%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background: #fff;
 }
 
 .request-type {
   color: #0E9594;
-  background: #DDF7F7;
-  min-width: 120px;
   font-size: 13px;
   font-weight: 500;
   display: flex;
-  padding: 16px 24px;
-  border: 1px solid #BAE9E8;
-  border-radius: 4px 0 0 4px;
+  padding: 16px 24px 8px;
+  border-radius: 8px 8px 0 0;
 }
 
 .request-desc {
   font-size: 14px;
   line-height: 22px;
   color: #666;
-  background: #fff;
-  padding: 16px 24px;
-  border-radius: 0 4px 4px 0;
-  border-top: 1px solid #BAE9E8;
-  border-right: 1px solid #BAE9E8;
-  border-bottom: 1px solid #BAE9E8;
-  width: 100%;
+  padding: 0 24px 16px;
+  border-radius: 0 0px 4px 4px;
+  min-height: 160px;
 }
 
 .table li {
@@ -212,7 +210,8 @@ main h1 {
 .record-id {
   color: #999;
   font-size: 12px;
-  margin-right: 20px;
+  width: 24px;
+  margin-right: 4px;
 }
 
 .record-name {
