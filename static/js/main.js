@@ -3,7 +3,7 @@
 
 //Airtable Credentials
 // var Airtable = require('airtable');
-// var base = new Airtable({apiKey: 'keyYnLHWVlLVtnMMC'}).base('appb2lxHLQHKIk9iv');
+// var base = new Airtable({apiKey: ''}).base('appb2lxHLQHKIk9iv');
 
 // Menu Logic
 const navLinks = document.getElementsByClassName("nav-item");
