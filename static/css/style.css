@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  background: #F9F9F9;
+  font-family: Inter;
+  color: #666;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+p {
+  line-height: 24px;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.flx-center {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background: #5C80FF;
+  border: none;
+  border-radius: 4px;
+}
+
+.link-button a {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Inter';
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.link-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.attach {
+  background: #eee;
+}
+
+.attach a {
+  color: #666;
+}
+
+.attach img path {
+  color: #666;
+}
+
+
+
+header {
+  background: #ffffff;
+  height: 108px;
+  padding: 0px 64px;
+  border-bottom: 2px solid #E5E5E5;
+  justify-content: space-between;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header-title a {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  color: #000;
+}
+
+.header-link {
+  font-size: 13px;
+  color: #666;
+  margin-right: 8px;
+}
+
+.core-content {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  align-items: stretch;
+}
+
+nav  {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 48px;
+  background: #F0F0F0;
+  border-right: 2px solid #E5E5E5;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  padding: 12px 16px;
+  transition: 0.1s;
+  border-radius: 8px;
+  width: 160px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.nav-item img {
+  opacity: 0.5;
+  margin-right: 12px;
+}
+
+main {
+  padding: 60px 72px;
+  line-height: 24px;
+}
+
+main h1 {
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+}
+
+/* main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+} */
+
+.request-list {
+  margin: 36px 0;
+}
+
+.request {
+  display: flex;
+  margin: 12px 0px;
+  width: 100%;
+  min-height: 100px;
+}
+
+.request-type {
+  color: #0E9594;
+  background: #DDF7F7;
+  min-width: 120px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  padding: 16px 24px;
+  border: 1px solid #BAE9E8;
+  border-radius: 4px 0 0 4px;
+}
+
+.request-desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 0 4px 4px 0;
+  border-top: 1px solid #BAE9E8;
+  border-right: 1px solid #BAE9E8;
+  border-bottom: 1px solid #BAE9E8;
+  width: 100%;
+}
+
+.table li {
+  background: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.record-id {
+  color: #999;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.record-name {
+  font-size: 14px;
+}
+
+.record-tag {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  background: #FFCAC7;
+  padding: 0px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.record-date {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+.bill {
+  background: #0E9594;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.active {
+  color: #000;
+  opacity: 1;
+}

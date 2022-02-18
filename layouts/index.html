@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<p>Welcome to the CION dashboard. To get in touch with TNB, please use the contact widget in the bottom left-hand corner. When submitting an email, please make sure to properly tag your request.</p>
+
+<section class="request-list">
+  <div class="request">
+    <div class="request-type">
+      Work Request
+    </div>
+    <div class="request-desc">
+      Use this tag when submitting any requests for any additional work. We'll scope it out and get back to you with a quote.
+    </div>
+  </div>
+  <div class="request">
+    <div class="request-type">
+      Bug Report
+    </div>
+    <div class="request-desc">
+      Use this tag to alert us of any usability issues or bugs.
+    </div>
+  </div>
+  <div class="request">
+    <div class="request-type">
+      General Question
+    </div>
+    <div class="request-desc">
+      Not sure? Send us a general inquiry and we'll be in touch as soon as we can.
+    </div>
+  </div>
+</section>
+
+<h4>Component Examples</h4>
+
+<ul class="table">
+  <li><div class="record">
+    <div class="title flx-center">
+      <span class="record-id">1</span>
+      <span class="record-name">Augment new production notifications</span>
+    </div>
+    <div class="data flx-center">
+      <span class="record-tag">Design</span>
+      <span class="record-date">March 14, 2022</span>
+    </div>
+  </div></li>
+  <li><div class="record">
+    <div class="title flx-center">
+      <span class="record-id">1</span>
+      <span class="record-name">Search Page Mockups</span>
+    </div>
+    <div class="data flx-center">
+      <button type="button" name="button" class="link-button external"><a href="#">View in Figma</a><img src="/img/external-link.svg" alt=""></button>
+    </div>
+  </div></li>
+  <li><div class="record">
+    <div class="title flx-center">
+      <span class="record-id">3</span>
+      <span class="record-name">Invoice - 3/12/2022</span>
+    </div>
+    <div class="data flx-center">
+      <button type="button" name="button" class="link-button attach"><a href="#">Download</a><img src="/img/menuicons/download.svg" alt=""></button>
+      <span class="record-tag bill">Paid</span>
+    </div>
+  </div></li>
+</ul>
+
+
+
+{{ end }}
