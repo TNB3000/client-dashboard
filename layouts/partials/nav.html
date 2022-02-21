@@ -1,8 +1,15 @@
+<a class="header-title" href="/index.html">Client Dashboard</a>
+
 <ul>
   {{ $currentPage := . }}
-  {{ range .Site.Menus.mainmenu }}
+  {{ range .Site.Menus.main }}
   <li class="nav-item flx-center">
-    <a class="nav-link" href="{{ .URL }}">{{ .Title }}</a>
+    <a class="nav-link" href="{{ .URL }}">
+      <span class="icon menu-icon" aria-hidden="true">
+        
+      </span>
+      {{ .Name }}
+    </a>
   </li>
   {{ end }}
 </ul>

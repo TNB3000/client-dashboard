@@ -1,3 +1,29 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'cli-dash'
+
+[menu]
+[[menu.main]]
+  identifier = 'deliverables'
+  name = 'Deliverables'
+  pre = "icons/target.svg"
+  url = '/deliverables/'
+  weight = -1
+[[menu.main]]
+  identifier = 'resources'
+  name = 'Resources'
+  pre = "icons/package.svg"
+  url = '/deliverables/'
+  weight = 0
+[[menu.main]]
+  identifier = 'bills-quotes'
+  name = 'Bills & Quotes'
+  pre = "icons/dollar.svg"
+  url = '/bills-quotes/'
+  weight = 1
+[[menu.main]]
+  identifier = 'reports'
+  name = 'Reports'
+  pre = "icons/trending-up.svg"
+  url = '/reports/'
+  weight = 2

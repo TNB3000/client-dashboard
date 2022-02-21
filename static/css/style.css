@@ -78,15 +78,11 @@ header {
 }
 
 .header-title {
-  margin: 0;
-}
-
-.header-title a {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
-  margin: 0;
+  margin-bottom: 24px;
   color: #000;
 }
 
@@ -240,9 +236,4 @@ main h1 {
   color: white;
   font-weight: 500;
   border-radius: 4px;
-}
-
-.active {
-  color: #000;
-  opacity: 1;
 }
