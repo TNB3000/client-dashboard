@@ -3,11 +3,12 @@
 <ul>
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
+  {{ $active := in $currentPage.RelPermalink .URL }}
   <li class="nav-item flx-center">
+    <span class="icon menu-icon" aria-hidden="true">
+      {{ partialCached (print .Pre) .}}
+    </span>
     <a class="nav-link" href="{{ .URL }}">
-      <span class="icon menu-icon" aria-hidden="true">
-        
-      </span>
       {{ .Name }}
     </a>
   </li>

@@ -13,7 +13,7 @@ title = 'cli-dash'
   identifier = 'resources'
   name = 'Resources'
   pre = "icons/package.svg"
-  url = '/deliverables/'
+  url = '/resources/'
   weight = 0
 [[menu.main]]
   identifier = 'bills-quotes'

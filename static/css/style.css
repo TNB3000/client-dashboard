@@ -5,6 +5,7 @@ body {
   color: #666;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -103,7 +104,7 @@ nav  {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 48px;
+  padding: 48px 48px 48px 36px;
   background: #F0F0F0;
   border-right: 2px solid #E5E5E5;
 }
@@ -122,12 +123,16 @@ nav li {
   transition: 0.1s;
   border-radius: 8px;
   width: 160px;
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1;
 }
 
 .nav-link {
   font-size: 16px;
   color: #000000;
-  opacity: 0.5;
 }
 
 .nav-item:hover {
@@ -136,9 +141,17 @@ nav li {
   cursor: pointer;
 }
 
-.nav-item img {
-  opacity: 0.5;
+.menu-icon {
+  display: flex;
   margin-right: 12px;
+}
+
+.menu-icon svg {
+  line-height: 1;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  stroke: #000;
 }
 
 main {
