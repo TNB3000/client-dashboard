@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0;
+  margin: 0;
 }
 
 p {
@@ -23,6 +23,7 @@ ul, ol {
 
 li {
   margin-bottom: 12px;
+  list-style-type: none;
 }
 
 .flx-center {
@@ -78,12 +79,12 @@ header {
   justify-content: space-between;
 }
 
-.header-title {
+.header-title a {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 36px;
-  margin-bottom: 24px;
+  margin: 0;
   color: #000;
 }
 
@@ -151,17 +152,25 @@ nav li {
   vertical-align: top;
   width: 24px;
   height: 24px;
-  stroke: #000;
+}
+
+.active a {
+  color: #0E9594;
+}
+
+.active svg path {
+  stroke: #0E9594;
 }
 
 main {
-  padding: 60px 72px;
-  line-height: 24px;
+  padding: 48px 72px;
+  width: 100%;
 }
 
 main h1 {
   font-family: 'Lexend Deca';
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
 /* main ul {
@@ -181,17 +190,19 @@ main h1 {
   flex-direction: column;
   margin: 12px 12px 0 0;
   width: 33.3%;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); */
   border-radius: 8px;
-  background: #fff;
+  padding: 30px;
+  background: #eee;
 }
 
 .request-type {
   color: #0E9594;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
+  margin-bottom: 12px;
   display: flex;
-  padding: 16px 24px 8px;
+  /* padding: 16px 24px 8px; */
   border-radius: 8px 8px 0 0;
 }
 
@@ -199,7 +210,7 @@ main h1 {
   font-size: 14px;
   line-height: 22px;
   color: #666;
-  padding: 0 24px 16px;
+  /* padding: 0 24px 16px; */
   border-radius: 0 0px 4px 4px;
   min-height: 160px;
 }
@@ -210,10 +221,57 @@ main h1 {
   margin-bottom: 16px;
 }
 
+.record-menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.record-menu-item {
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  padding: 12px 0px;
+  /* background: #eee;
+  border-radius: 60px; */
+}
+
+.active-menu-item {
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
+
+.record-menu:first-child {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.count {
+  font-size: 12px;
+  color: white;
+  background: #7ACBCA;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.rule {
+  height: 2px;
+  width: 100%;
+  background: #c4c4c4;
+  border-radius: 2px;
+}
+
 .record {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+  margin: 0;
 }
 
 .record-id {
@@ -233,13 +291,12 @@ main h1 {
   font-size: 12px;
   font-weight: 500;
   background: #FFCAC7;
-  padding: 0px 8px;
+  padding: 2px 4px;
   border-radius: 4px;
-  margin-left: 8px;
 }
 
 .record-date {
-  margin-left: 8px;
+  margin-left: 12px;
   font-size: 14px;
   color: #999;
 }
